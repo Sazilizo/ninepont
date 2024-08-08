@@ -6,21 +6,22 @@ const navigation = document.getElementById("navigation_items");
 openBtn.addEventListener("click", ()=>{
     const list = navigation.classList;
     if(String(list).includes("navigation_items")){
-        navigation.style.display = "none"
+        navigation.style.display = "block"
     };
     openBtn.style.display = "none";
     closeBtn.style.display = "block";
-    navContainer.style.backgroundColor= "white";
-    navContainer.style.color = "black";
+    navContainer.style.backgroundColor= "black";
+    navContainer.style.color = "white";
 });
 
 closeBtn.addEventListener("click", ()=>{
     const list = navigation.classList;
     if(String(list).includes("navigation_items")){
-        navigation.style.display = "block"
+        navigation.style.display = "none"
     };
     openBtn.style.display = "block";
     closeBtn.style.display = "none";
-    navContainer.style.backgroundColor= "black";
-    navContainer.style.color = "white";
+    navContainer.style.backgroundColor= "white";
+    navContainer.style.color = "black";
 });
+
